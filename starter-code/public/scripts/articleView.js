@@ -123,7 +123,7 @@ articleView.submit = function(event) {
 }
 
 articleView.initIndexPage = function() {
-  app.Article.all.forEach(a => $('#articles').append(a.toHtml()));
+  Article.all.forEach(a => $('#articles').append(a.toHtml()));
 
   articleView.populateFilters();
   articleView.handleCategoryFilter();
